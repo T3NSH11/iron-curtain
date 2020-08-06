@@ -38,13 +38,13 @@ public class Tank : MonoBehaviour
         {
             GameObject clone = Instantiate(bullet);
             clone.transform.position = FiringEnd.transform.position;
-            clone.GetComponent<Rigidbody>().velocity = FiringEnd.transform.forward * 10;
+            clone.GetComponent<Rigidbody>().velocity = FiringEnd.transform.right * 10;
         }
     }
 
     private void FixedUpdate()
     {
-        GetComponent<Rigidbody>().velocity = FiringEnd.transform.forward * Moving;
+        GetComponent<Rigidbody>().velocity = FiringEnd.transform.right * Moving;
         this.transform.Rotate(transform.up * Rotate);
     }
 }
