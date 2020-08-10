@@ -33,7 +33,6 @@ public class Tank : MonoBehaviour
 
 
 
-
         if (Input.GetKeyDown(KeyCode.Space))
         {
             GameObject clone = Instantiate(bullet);

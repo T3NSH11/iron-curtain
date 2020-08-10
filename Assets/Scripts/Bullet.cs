@@ -8,15 +8,12 @@ using UnityEngine.Animations;
 public class Bullet : MonoBehaviour
 {
     public Vector3 Move;
-    public BoxCollider Collide;
+    public SphereCollider Collide;
     public GameObject thisobject;
     public int BounceLimit;
 
+    Vector3 reflected;
     // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
@@ -39,24 +36,10 @@ public class Bullet : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision)
-    {
-        
-        if (collision.collider.transform.localRotation.y > 0)
-        {
-            Move.z = -Move.z;
-            --BounceLimit;
-            GetComponent<Rigidbody>().velocity = Move;
-        }
-        else
-        {
-            Move.x = -Move.x;
-            --BounceLimit;
-            GetComponent<Rigidbody>().velocity = Move;
-        }
-    }
+    {    
+     Vector3 WallNormal = collision.contacts[0].normal;
+     reflected = Vector3.Reflect(Move, WallNormal).normalized;
 
-    private void FixedUpdate()
-    {
-        
+     GetComponent<Rigidbody>().velocity = reflected * 10;  
     }
 }
