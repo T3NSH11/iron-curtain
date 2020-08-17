@@ -4,15 +4,29 @@ using UnityEngine;
 
 public class TurnBaseManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public static bool player1turn = true;
+    public static bool player2turn = false;
+    private static bool playershot;
+    
+    
     void Start()
     {
-        
+        playershot = Tank.playershot;
     }
 
-    // Update is called once per frame
+
     void Update()
     {
-        
+        if (playershot == true && player1turn == true)
+        {
+            player1turn = false;
+            player2turn = true;
+        }
+
+        if (playershot == true && player1turn == false)
+        {
+            player1turn = true;
+            player2turn = false;
+        }
     }
 }
