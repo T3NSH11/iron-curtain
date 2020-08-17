@@ -40,6 +40,7 @@ public class Bullet : MonoBehaviour
      Vector3 WallNormal = collision.contacts[0].normal;
      reflected = Vector3.Reflect(Move, WallNormal).normalized;
 
-     GetComponent<Rigidbody>().velocity = reflected * 10;  
+     GetComponent<Rigidbody>().velocity = reflected * 10;
+     --BounceLimit;
     }
 }

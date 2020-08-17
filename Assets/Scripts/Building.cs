@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class Building : MonoBehaviour
 {
+    
     // Start is called before the first frame update
-    public GameObject bulletTarget;
-    public Color HitColor;
-    public Texture HitTexture;
     public Material HitMaterial;
     void Start()
     {
@@ -22,7 +20,11 @@ public class Building : MonoBehaviour
 
     private void OnCollisionEnter(Collision bulletTarget)
     {
-        GetComponent<MeshRenderer>().material = HitMaterial;
-        Debug.Log("Ouch");
+        if (bulletTarget.gameObject.CompareTag("Bullet"))
+        {
+            GetComponentInChildren<MeshRenderer>().material = HitMaterial; 
+            Debug.Log("Ouch");
+        }
+        
     }
 }
