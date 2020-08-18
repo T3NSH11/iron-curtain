@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5062534435139008185}
   - component: {fileID: 5062534435139008187}
   - component: {fileID: 8858912950386662755}
-  - component: {fileID: 5062534435139008186}
+  - component: {fileID: 4924778904681406345}
   m_Layer: 8
   m_Name: Tank_1
   m_TagString: Untagged
@@ -64,7 +64,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1.5}
   m_Center: {x: 0, y: 0, z: 0.20319492}
---- !u!114 &5062534435139008186
+--- !u!114 &4924778904681406345
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -73,13 +73,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5062534435139008184}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e32425d05453435469d4948bc9376361, type: 3}
+  m_Script: {fileID: 11500000, guid: 1f76e6f6964edbd4e8b143d4493ba621, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MainCam: {fileID: 0}
   bullet: {fileID: 803298399900133401, guid: ae1d0d95aeef1d54f87743e136163eaf, type: 3}
   FiringEnd: {fileID: 5062534436938539292}
-  Rotate: 0
+  Rotate: 1
   MoveSpeed: 10
 --- !u!1 &5062534436382241055
 GameObject:
@@ -138,6 +137,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -162,6 +162,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &5062534436382241049
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -231,6 +232,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -255,6 +257,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
 --- !u!65 &5062534436844595187
 BoxCollider:
   m_ObjectHideFlags: 0
