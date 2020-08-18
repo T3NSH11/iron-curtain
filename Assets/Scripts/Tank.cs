@@ -52,7 +52,9 @@ public class Tank : MonoBehaviour
                 clone.transform.position = FiringEnd.transform.position;
                 clone.GetComponent<Rigidbody>().velocity = FiringEnd.transform.right * 10;
             }
+
         }
+        
     }
 
     private void FixedUpdate()

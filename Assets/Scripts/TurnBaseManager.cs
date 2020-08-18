@@ -21,12 +21,14 @@ public class TurnBaseManager : MonoBehaviour
         {
             player1turn = false;
             player2turn = true;
+            playershot = false;
         }
 
         if (playershot == true && player1turn == false)
         {
             player1turn = true;
             player2turn = false;
+            playershot = false;
         }
     }
 }
