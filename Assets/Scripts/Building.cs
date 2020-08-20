@@ -7,6 +7,10 @@ public class Building : MonoBehaviour
     
     // Start is called before the first frame update
     public Material HitMaterial;
+    public int CaputuredControl;
+    public int Player1Score;
+    int Player2Score;
+    public bool CAP;
     void Start()
     {
         
@@ -24,6 +28,14 @@ public class Building : MonoBehaviour
         {
             GetComponentInChildren<MeshRenderer>().material = HitMaterial; 
             Debug.Log("Ouch");
+            Player1Score = 1;
+            CAP = true;
+        }
+        else
+        {
+            Debug.Log("Ouch");
+            Player1Score = 0;
+            CAP = true;
         }
         
     }
