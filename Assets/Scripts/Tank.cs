@@ -34,8 +34,7 @@ public class Tank : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(tag.Equals(player1check))
-        if (player1turn == true)
+        if (player1turn == true && tag.Equals(player1check))
         {
             Moving = Input.GetAxis("Vertical") * MoveSpeed;
             Rotate = Input.GetAxis("Horizontal") * 5;
