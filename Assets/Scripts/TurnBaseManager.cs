@@ -4,31 +4,17 @@ using UnityEngine;
 
 public class TurnBaseManager : MonoBehaviour
 {
-    public static bool player1turn = true;
-    public static bool player2turn = false;
-    private static bool playershot;
-    
-    
-    void Start()
+    public int turnstat = 0;
+    public void EndTurn()
     {
-        playershot = Tank.playershot;
-    }
-
-
-    void Update()
-    {
-        if (playershot == true && player1turn == true)
+        if (turnstat == 0)
         {
-            player1turn = false;
-            player2turn = true;
-            playershot = false;
+            turnstat = 1;
         }
-
-        if (playershot == true && player1turn == false)
+        else
         {
-            player1turn = true;
-            player2turn = false;
-            playershot = false;
+            turnstat = 0;
         }
     }
+    
 }
