@@ -28,7 +28,7 @@ public class Tank : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (turnmanager.turnstat == id)
+        if (turnmanager.turnstat == id && turnmanager.timeSinceTurnStarted>.2f)
         {
             Moving = Input.GetAxis("Vertical") * MoveSpeed;
             Rotate = Input.GetAxis("Horizontal") * 5;
