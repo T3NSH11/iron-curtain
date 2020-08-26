@@ -7,7 +7,8 @@ public class ScoreManager : MonoBehaviour
     public List<GameObject> CaptureBuildings;
     public int Player1TotalScore;
     public int Player2TotalScore;
-    static int temp;
+    static int temp1;
+    static int temp2;
 
     // Start is called before the first frame update
     void Start()
@@ -37,11 +38,18 @@ public class ScoreManager : MonoBehaviour
         {
             if (CaptureBuildings[i].GetComponent<Building>().Player1Score == 1)
             {
-                temp += 1;
+                temp1 += 1;
+            }
+
+            if (CaptureBuildings[i].GetComponent<Building>().Player2Score == 1)
+            {
+                temp2 += 1;
             }
         }
-        Player1TotalScore = temp;
-        Debug.Log("Score: " + Player1TotalScore);
-        temp = 0;
+        Player1TotalScore = temp1;
+        Player2TotalScore = temp2;
+        Debug.Log(Player1TotalScore + " : " + Player2TotalScore);
+        temp1 = 0;
+        temp2 = 0;
     }
 }

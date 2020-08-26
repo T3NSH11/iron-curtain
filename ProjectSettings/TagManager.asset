@@ -4,8 +4,10 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Bullet
   - Building
+  - Bullet_1
+  - Bullet_2
+  - Bullet
   layers:
   - Default
   - TransparentFX
@@ -19,7 +21,7 @@ TagManager:
   - Plyaer1_Bullet
   - hidden
   - Player2_Tank
-  - 
+  - Player2_Bullet
   - 
   - 
   - 

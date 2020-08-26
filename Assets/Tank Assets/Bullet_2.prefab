@@ -7,6 +7,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 803298398652188455, guid: ae1d0d95aeef1d54f87743e136163eaf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 803298398652188459, guid: ae1d0d95aeef1d54f87743e136163eaf,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -60,7 +65,12 @@ PrefabInstance:
     - target: {fileID: 803298399900133401, guid: ae1d0d95aeef1d54f87743e136163eaf,
         type: 3}
       propertyPath: m_TagString
-      value: Bullet
+      value: Bullet_2
+      objectReference: {fileID: 0}
+    - target: {fileID: 803298399900133401, guid: ae1d0d95aeef1d54f87743e136163eaf,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 803298399900133404, guid: ae1d0d95aeef1d54f87743e136163eaf,
         type: 3}

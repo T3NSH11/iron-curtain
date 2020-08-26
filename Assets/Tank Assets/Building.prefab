@@ -222,7 +222,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0784ae173e0478b4595760d65092ffd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HitMaterial: {fileID: 0}
+  HitMaterial1: {fileID: 2100000, guid: 614264626a0a0784aacda17dc644451a, type: 2}
+  HitMaterial2: {fileID: 2100000, guid: d828a62630b6d1f4e8d5b88e108cabba, type: 2}
+  CaputuredControl: 0
+  Player1Score: 0
+  Player2Score: 0
+  CAP: 0
 --- !u!1 &1048443721364339979
 GameObject:
   m_ObjectHideFlags: 0
