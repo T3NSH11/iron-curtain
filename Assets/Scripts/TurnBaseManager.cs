@@ -15,27 +15,32 @@ public class TurnBaseManager : MonoBehaviour
         //playershot = Tank.playershot;
     }
 
-
+    //public int turnstat = 0;
+    //public float timeSinceTurnStarted = 0;
     void Update()
     {
-        /*if (playershot == true && player1turn == true)
+        /*timeSinceTurnStarted = 0;
+        if (turnstat == 0)
         {
-            player1turn = false;
-            player2turn = true;
-            playershot = false;
+            turnstat = 1;
         }
-
-        if (playershot == true && player1turn == false)
+        else
         {
-            player1turn = true;
-            player2turn = false;
-            playershot = false;
-        }
-        */
+            turnstat = 0;
+        }*/
+        
     }
 
     public static void EndTurn()
     {
         PlayerTurn++;
     }
+    /*private void Update()
+    {
+        timeSinceTurnStarted += Time.deltaTime;
+
+    }*/
+
+
+    
 }
