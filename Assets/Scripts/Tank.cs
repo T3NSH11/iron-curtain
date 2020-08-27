@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UIElements;
+using UnityEngine.SceneManagement;
 
 public class Tank : MonoBehaviour
 {
@@ -49,7 +50,6 @@ public class Tank : MonoBehaviour
                 clone.transform.position = FiringEnd.transform.position;
                 clone.GetComponent<Rigidbody>().velocity = FiringEnd.transform.right * 10;
                 rb.AddForce(transform.right * -Recoil);
-
                 TurnBaseManager.EndTurn();
             }
 
@@ -57,8 +57,16 @@ public class Tank : MonoBehaviour
         else if(TurnBaseManager.PlayerTurn >= 2)
         {
             TurnBaseManager.PlayerTurn = 0;
-        }        
-        
+        }
+
+        if (ID == 0 && health == 0)
+        {
+            SceneManager.LoadScene("player2wins", LoadSceneMode.Additive);
+        }
+        if (ID == 1 && health == 0)
+        {
+            SceneManager.LoadScene("player1wins", LoadSceneMode.Additive);
+        }
     }
 
     private void FixedUpdate()
