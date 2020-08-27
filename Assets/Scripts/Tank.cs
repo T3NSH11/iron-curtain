@@ -24,11 +24,12 @@ public class Tank : MonoBehaviour
     private float Moving;
     public float Rotate;
     public int MoveSpeed;
-
+    public int Recoil;
+    public Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
-
+        rb = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
@@ -45,6 +46,7 @@ public class Tank : MonoBehaviour
                 GameObject clone = Instantiate(bullet);
                 clone.transform.position = FiringEnd.transform.position;
                 clone.GetComponent<Rigidbody>().velocity = FiringEnd.transform.right * 10;
+                rb.AddForce(transform.right * -Recoil);
 
                 TurnBaseManager.EndTurn();
             }

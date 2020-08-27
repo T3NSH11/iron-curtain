@@ -1237,6 +1237,11 @@ PrefabInstance:
       propertyPath: ID
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1467199559892254495, guid: 919c3fd94adb70e4d87c116028737eba,
+        type: 3}
+      propertyPath: Recoil
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 1667523970194210509, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -2117,6 +2122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: ID
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1467199559892254495, guid: 919c3fd94adb70e4d87c116028737eba,
+        type: 3}
+      propertyPath: Recoil
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 1667523970194210509, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
