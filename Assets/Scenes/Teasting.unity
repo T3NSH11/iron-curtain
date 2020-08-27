@@ -839,7 +839,7 @@ Camera:
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 2871
+    m_Bits: 6967
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -2131,7 +2131,7 @@ PrefabInstance:
     - target: {fileID: 2655971357058621029, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3025320940149485679, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
@@ -2141,7 +2141,7 @@ PrefabInstance:
     - target: {fileID: 4714478977765383545, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 5066694432406932202, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
@@ -2161,17 +2161,17 @@ PrefabInstance:
     - target: {fileID: 5471560204858551742, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6066952426105097155, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6452088440606696871, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6464088997387861793, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
@@ -2241,7 +2241,7 @@ PrefabInstance:
     - target: {fileID: 7042403559572669757, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8000039556805498063, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
@@ -2251,12 +2251,12 @@ PrefabInstance:
     - target: {fileID: 8718307138099886865, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 8723303592894981155, guid: 919c3fd94adb70e4d87c116028737eba,
         type: 3}
       propertyPath: m_Layer
-      value: 8
+      value: 11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 919c3fd94adb70e4d87c116028737eba, type: 3}
