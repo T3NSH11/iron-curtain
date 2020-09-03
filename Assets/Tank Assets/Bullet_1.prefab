@@ -259,3 +259,5 @@ MonoBehaviour:
   Collide: {fileID: 1988408562501378358}
   thisobject: {fileID: 803298398652188455}
   BounceLimit: 3
+  BOOM: {fileID: 4546202775706150365, guid: 3045b1481e49a1b419c203ff727d32b3, type: 3}
+  ID: 0

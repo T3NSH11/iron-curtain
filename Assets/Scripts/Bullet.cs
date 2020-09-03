@@ -11,6 +11,7 @@ public class Bullet : MonoBehaviour
     public SphereCollider Collide;
     public GameObject thisobject;
     public int BounceLimit;
+    public ParticleSystem BOOM;
 
     Vector3 reflected;
     // Start is called before the first frame update
@@ -27,7 +28,7 @@ public class Bullet : MonoBehaviour
         {
             GetComponent<TrailRenderer>().time = 999;
         }
-        if(BounceLimit == 0)
+        if(BounceLimit <= 0)
         {
             Destroy(Collide);
             Destroy(thisobject);
@@ -36,7 +37,15 @@ public class Bullet : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision)
-    {    
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            BounceLimit = 0;
+        }
+        ParticleSystem clone = Instantiate(BOOM);
+        clone.transform.position = this.transform.position;
+        clone.Play();
+
      Vector3 WallNormal = collision.contacts[0].normal;
      reflected = Vector3.Reflect(Move, WallNormal).normalized;
 
