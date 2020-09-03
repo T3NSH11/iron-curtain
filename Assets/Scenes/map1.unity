@@ -662,6 +662,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1613621413770217563, guid: 65e26ebc1a40bac47a89f0c089dfd064,
+        type: 3}
+      propertyPath: HitMaterial1
+      value: 
+      objectReference: {fileID: 2100000, guid: 614264626a0a0784aacda17dc644451a, type: 2}
+    - target: {fileID: 1613621413770217563, guid: 65e26ebc1a40bac47a89f0c089dfd064,
+        type: 3}
+      propertyPath: HitMaterial2
+      value: 
+      objectReference: {fileID: 2100000, guid: d828a62630b6d1f4e8d5b88e108cabba, type: 2}
     - target: {fileID: 7691189793335328066, guid: 65e26ebc1a40bac47a89f0c089dfd064,
         type: 3}
       propertyPath: m_Name
@@ -3935,6 +3945,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1613621413770217563, guid: 65e26ebc1a40bac47a89f0c089dfd064,
+        type: 3}
+      propertyPath: HitMaterial1
+      value: 
+      objectReference: {fileID: 2100000, guid: 614264626a0a0784aacda17dc644451a, type: 2}
+    - target: {fileID: 1613621413770217563, guid: 65e26ebc1a40bac47a89f0c089dfd064,
+        type: 3}
+      propertyPath: HitMaterial2
+      value: 
+      objectReference: {fileID: 2100000, guid: d828a62630b6d1f4e8d5b88e108cabba, type: 2}
     - target: {fileID: 7691189793335328066, guid: 65e26ebc1a40bac47a89f0c089dfd064,
         type: 3}
       propertyPath: m_Name
@@ -4009,6 +4029,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1613621413770217563, guid: 65e26ebc1a40bac47a89f0c089dfd064,
+        type: 3}
+      propertyPath: HitMaterial1
+      value: 
+      objectReference: {fileID: 2100000, guid: 614264626a0a0784aacda17dc644451a, type: 2}
+    - target: {fileID: 1613621413770217563, guid: 65e26ebc1a40bac47a89f0c089dfd064,
+        type: 3}
+      propertyPath: HitMaterial2
+      value: 
+      objectReference: {fileID: 2100000, guid: d828a62630b6d1f4e8d5b88e108cabba, type: 2}
     - target: {fileID: 7691189793335328066, guid: 65e26ebc1a40bac47a89f0c089dfd064,
         type: 3}
       propertyPath: m_Name
